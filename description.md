@@ -39,7 +39,7 @@ File structure description
 - **/main** - functions to run the models 
 - **/model** - helper functions for working with models
 - **/util** - functions for loading data, setting environment, creating submission ...
-- **settings.m** - file containing basic settings including data paths
+- **settings_local.m** - file containing basic settings including data paths
 - **models.zip** - archive containing pretrained models for each subject and channels which can be loaded and used to create submission with */main/run_trained_dt.m* 
 
 Instructions
@@ -47,6 +47,6 @@ Instructions
  **Held-out evaluation**
 
  1. Unpack the models from **models.zip** to a folder
- 2. Change file/folder paths in **settings.m** for data,models,features and submission file
+ 2. Change file/folder paths in **settings_local.m** for data,models,features and submission file
  3. Set whether the features are supposed to be saved to disk or not
  4. Run the **/main/run_trained_dt.m** script which will load/generate features for each subject, load trained models and create submission
