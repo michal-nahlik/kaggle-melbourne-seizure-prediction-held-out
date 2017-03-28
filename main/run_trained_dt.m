@@ -6,7 +6,7 @@ opts = setupEnv();
 %%
 model = @load_and_run_dt;
 %%
-for i = 2:3
+for i = 1:3
     %% prepare options for a subject
     opts_subject = opts;
     opts_subject.subject_index = i;

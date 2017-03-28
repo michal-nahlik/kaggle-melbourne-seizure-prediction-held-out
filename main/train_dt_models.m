@@ -8,7 +8,7 @@ opts.train_folders      = {'train_1','train_2','train_3'};
 opts.min_parents        = [10,5,5];
 opts.min_leafs          = [5,5,5];
 %% create model and submission for each subject
-for i = 3:3
+for i = 1:3
     subjectName_train = opts.train_folders{i};
     %% load training data
     [data.xTrain,data.yTrain] = get_train_data(subjectName_train,opts); 
