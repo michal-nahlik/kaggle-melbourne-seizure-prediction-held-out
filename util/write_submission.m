@@ -4,7 +4,7 @@ function write_submission(y,file_names,submissionFile)
 
     tb              = readtable(submissionFile,'Delimiter','comma');
     file            = tb.File;
-    [~,ind]         = intersect(file,file_names);
-    tb.Class(ind)   = y;
+    [~,ia,ib]       = intersect(file,file_names);
+    tb.Class(ia)    = y(ib);
     writetable(tb,submissionFile,'Delimiter','comma');
 end
